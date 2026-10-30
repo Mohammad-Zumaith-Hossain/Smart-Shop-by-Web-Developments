@@ -1,0 +1,30 @@
+/* Custom Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Cart and Todo Lists */
+#cartItemsList::-webkit-scrollbar,
+#todoList::-webkit-scrollbar,
+#apiResponseView::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cartItemsList::-webkit-scrollbar-thumb,
+#todoList::-webkit-scrollbar-thumb,
+#apiResponseView::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 4px;
+}
+
+/* Image Transitions */
+#sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Dynamic Line Through for Completed Todos */
+.completed-task {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
